@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ /*outline: solid cyan;*/
+}
+
+body {
+  font-size: 2vmin;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #333;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+/* ---------- HEADER + MENU ---------- */
+.cabeçario {
+  background-color: #CE4444;
+  display: grid;
+  grid-template-rows: auto auto;
+  outline: solid black;
+}
+
+.header {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmin 2vmin;
+  gap: 2vmin;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+}
+
+.logo img {
+  width: 12vmin;
+  height: 12vmin;
+}
+
+.barra-de-pesquisa {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+}
+
+.barra-de-pesquisa input {
+  padding: 1vmin;
+  border-radius: 10vmin;
+  border: 1px solid #ccc;
+  width: 30vmin;
+  font-size: 1.8vmin;
+}
+
+.barra-de-pesquisa .botao-pesquisa {
+  padding: 1vmin 2vmin;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8vmin;
+}
+
+.login-cadastro {
+  display: flex;
+  gap: 1vmin;
+  text-decoration: none;
+}
+
+.login-cadastro button {
+  padding: 1vmin 2vmin;
+  border: none;
+  border-radius: 0.5vmin;
+  cursor: pointer;
+}
+
+.Login {
+  background-color: black;
+  color: white;
+}
+
+.Cadastro {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* ---------- MENU ---------- */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 3vmin;
+  padding: 1vmin;
+  background-color: #D55A5A;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+
+.principal {
+  padding: 2vmin;
+}
+
+
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vmax;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1.5vmin;
+}
+
+.form-cadastro input {
+  padding: 1.5vmin;
+  border-radius: 1vmin;
+  border: 1px solid #ccc;
+  font-size: 2vmin;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+  margin-top: 1vmin;
+}
+
+.label-checkbox {
+  font-size: 2vmin;
+}
+
+.botao-login {
+  background-color: #222;
+  color: white;
+  font-size: 2vmin;
+  border-radius: 0.5vmin;
+  padding: 1.5vmin;
+  border: none;
+  margin-top: 2vmin;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botao-registra {
+  margin: 2vmin auto 0 auto;
+  padding: 1vmin 2vmin;
+  background-color: #e5d5ff;
+  border: none;
+  border-radius: 2vmin;
+  font-size: 2vmin;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #A3A4A0;
+  display: flex;
+  justify-content: center;
+  padding: 3vmin;
+  font-size: 1.8vmin;
+  gap: 3rem;
+  color: black;
+}
+
+.footer .coluna {
+  max-width: 50%;
+}

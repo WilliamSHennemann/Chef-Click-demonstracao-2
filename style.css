@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ /*outline: solid cyan;*/
+}
+
+body {
+  font-size: 2vmin;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #333;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+/* ---------- HEADER + MENU ---------- */
+.cabeçario {
+  background-color: #CE4444;
+  display: grid;
+  grid-template-rows: auto auto;
+  outline: solid black;
+}
+
+.header {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmin 2vmin;
+  gap: 2vmin;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+}
+
+.logo img {
+  width: 12vmin;
+  height: 12vmin;
+}
+
+.barra-de-pesquisa {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+}
+
+.barra-de-pesquisa input {
+  padding: 1vmin;
+  border-radius: 10vmin;
+  border: 1px solid #ccc;
+  width: 30vmin;
+  font-size: 1.8vmin;
+}
+
+.barra-de-pesquisa .botao-pesquisa {
+  padding: 1vmin 2vmin;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8vmin;
+}
+
+.login-cadastro {
+  display: flex;
+  gap: 1vmin;
+}
+
+.login-cadastro button {
+  padding: 1vmin 2vmin;
+  border: none;
+  border-radius: 0.5vmin;
+  cursor: pointer;
+}
+
+.Login {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.Cadastro {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+/* ---------- MENU ---------- */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 3vmin;
+  padding: 1vmin;
+  background-color: #D55A5A;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+
+.principal {
+  padding: 2vmin;
+}
+
+.Recomendado {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1vmin;
+  overflow-x: auto;
+  margin-top: 2vmin;
+}
+
+.flecha {
+  background: none;
+  border: none;
+  font-size: 4vmin;
+  cursor: pointer;
+}
+
+.molduras {
+  display: grid;
+  gap: 2vmin;
+  padding: 2vmin;
+  justify-content: center;
+}
+
+.moldura {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 1vmin;
+  padding: 1vmin;
+  text-align: center;
+  width: 100%; 
+  height: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #eee;
+  margin-bottom: 1vmin;
+}
+
+.footer {
+  background-color: #A3A4A0;
+  display: flex;
+  justify-content: center;
+  padding: 3vmin;
+  font-size: 1.8vmin;
+  gap: 3rem;
+  color: black;
+}
+
+.footer .coluna {
+  max-width: 50%;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 480px) {
+  .molduras {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .moldura-2,
+  .moldura-3,
+  .moldura-4,
+  .moldura-5,
+  .moldura-6 {
+    display: none;
+  }
+}
+
+/* Celular médio (2 cards visíveis) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .molduras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .moldura-3,
+  .moldura-4,
+  .moldura-5,
+  .moldura-6 {
+    display: none;
+  }
+}
+
+/* Tablet (3 cards visíveis) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .molduras {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .moldura-4,
+  .moldura-5,
+  .moldura-6 {
+    display: none;
+  }
+}
+
+/* Desktop (6 cards visíveis lado a lado) */
+@media (min-width: 1024px) {
+  .molduras {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .moldura {
+    display: block;
+  }
+}
