@@ -121,7 +121,7 @@ body {
 .imagem-produto {
   width: 40%;
   aspect-ratio: 1 / 1;
-  background-color: #eee;
+  object-fit: cover;
   border: 2px solid black;
   border-radius: 2vmin;
 }
