@@ -7,64 +7,99 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="cabeçario">
-    <header class="header">
-      <div class="logo">
-        <img src="Img/ChatGPT Image 9 de jul. de 2025, 13_42_30.png" alt="Chef Click Logo">
-      </div>
 
-    <div class="barra-de-pesquisa">
-            <input type="search" name="pesquisa" placeholder="Search">
-            <a href="pesquisa.html" class="botao-pesquisa">🔎</a>
+<!-- Cabeçalho do site (logo, barra de pesquisa, login/cadastro e menu) -->
+<div class="cabeçario">
+  <header class="header">
+        
+    <!-- Logo da marca -->
+    <div class="logo">
+      <img src="Img/ChatGPT Image 9 de jul. de 2025, 13_42_30.png" alt="Chef Click Logo">
     </div>
 
+    <!-- Campo de pesquisa com botão -->
+    <div class="barra-de-pesquisa">
+      <input type="search" name="pesquisa" placeholder="Search">
+      <a href="pesquisa.html" class="botao-pesquisa">🔎</a>
+    </div>
+
+    <!-- Links de login e cadastro -->
     <div class="login-cadastro">
       <a href="login.html" class="Login">Login</a>
       <a href="cadastro.html" class="Cadastro">Cadastro</a>
-
     </div>
- 
   </header>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="#">Categorias</a>
-      <a href="#">Promoções</a>
-      <a href="#">Novidades</a>
-      <a href="#">Favoritos</a>
-      <a href="#">Recomendado</a>
-    </nav>
 
+  <!-- Menu de navegação -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="#">Categorias</a>
+    <a href="#">Promoções</a>
+    <a href="#">Novidades</a>
+    <a href="#">Favoritos</a>
+    <a href="#">Recomendado</a>
+  </nav>
 </div>
-<main class="principal">
-    <h2>Recomendado</h2>
-    <div class="Recomendado">
-      <button class="flecha esquerda">&lt;</button>
-      <div class="molduras">
-        <a href="Produto.html" class="moldura moldura-1"><img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img"><p>Text<br><strong>R$XX,XX</strong><br>Body text.</p></a>
-        <a href="Produto.html" class="moldura moldura-2"><img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img"><p>Text<br><strong>R$XX,XX</strong><br>Body text.</p></a>
-        <a href="Produto.html" class="moldura moldura-3"><img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img"><p>Text<br><strong>R$XX,XX</strong><br>Body text.</p></a>
-        <a href="Produto.html" class="moldura moldura-4"><img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img"><p>Text<br><strong>R$XX,XX</strong><br>Body text.</p></a>
-        <a href="Produto.html" class="moldura moldura-5"><img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img"><p>Text<br><strong>R$XX,XX</strong><br>Body text.</p></a>
-        <a href="Produto.html" class="moldura moldura-6"><img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img"><p>Text<br><strong>R$XX,XX</strong><br>Body text.</p></a>
-      </div>
-      <button class="flecha direita">&gt;</button>
-    </div>
-  </main>
 
-  <footer class="footer">
-    <div class="coluna">
-      <p>Chef Click - Sua comida favorita em poucos cliques</p>
-      <p>© 2025 Chef Click. Todos os direitos reservados.</p>
-      <p>Entregamos em toda a cidade | Atendimento das 10h às 23h</p>
-      <p>Suporte: (11) 91234-5678 | contato@chefclick.com.br</p>
-      <p>Aceitamos cartões, Pix e pagamentos online com segurança</p>
+<!-- Conteúdo principal da página -->
+<main class="principal">
+  <h2>Recomendado</h2>
+
+  <!-- Área de produtos recomendados com botões de navegação -->
+  <div class="Recomendado">
+    <!-- Botão para rolar os cards para a esquerda -->
+    <button class="flecha esquerda">&lt;</button>
+
+    <!-- Container com os cards de produtos -->
+    <div class="molduras">
+      <!-- Cada "moldura" é um card que leva para a página do produto -->
+      <a href="Produto.html" class="moldura moldura-1">
+        <img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img">
+        <p>Text<br><strong>R$XX,XX</strong><br>Body text.</p>
+      </a>
+      <!-- Repete os cards com classes diferentes para controle responsivo -->
+      <a href="Produto.html" class="moldura moldura-2">
+        <img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img">
+        <p>Text<br><strong>R$XX,XX</strong><br>Body text.</p>
+      </a>
+      <a href="Produto.html" class="moldura moldura-3">
+        <img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img">
+        <p>Text<br><strong>R$XX,XX</strong><br>Body text.</p>
+      </a>
+      <a href="Produto.html" class="moldura moldura-4">
+        <img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img">
+        <p>Text<br><strong>R$XX,XX</strong><br>Body text.</p>
+      </a>
+      <a href="Produto.html" class="moldura moldura-5">
+        <img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img">
+        <p>Text<br><strong>R$XX,XX</strong><br>Body text.</p>
+      </a>
+      <a href="Produto.html" class="moldura moldura-6">
+        <img src="Img/Que-comida-saudável-que-nada-brasileiro-gosta-de-fast-food.jpg" class="img">
+        <p>Text<br><strong>R$XX,XX</strong><br>Body text.</p>
+      </a>
     </div>
-    <div class="coluna">
-      <p>Nos acompanhe nas redes sociais:</p>
-      <p>Instagram: @chefclick.oficial</p>
-      <p>Facebook: com/chefclick.oficial</p>
-      <p>WhatsApp: 559912345678</p>
-    </div>
-  </footer>
+
+    <!-- Botão para rolar os cards para a direita -->
+    <button class="flecha direita">&gt;</button>
+  </div>
+</main>
+
+<!-- Rodapé com informações da empresa -->
+<footer class="footer">
+  <div class="coluna">
+    <p>Chef Click - Sua comida favorita em poucos cliques</p>
+    <p>© 2025 Chef Click. Todos os direitos reservados.</p>
+    <p>Entregamos em toda a cidade | Atendimento das 10h às 23h</p>
+    <p>Suporte: (11) 91234-5678 | contato@chefclick.com.br</p>
+    <p>Aceitamos cartões, Pix e pagamentos online com segurança</p>
+  </div>
+  <div class="coluna">
+    <p>Nos acompanhe nas redes sociais:</p>
+    <p>Instagram: @chefclick.oficial</p>
+    <p>Facebook: com/chefclick.oficial</p>
+    <p>WhatsApp: 559912345678</p>
+  </div>
+</footer>
 </body>
 </html>

@@ -7,76 +7,96 @@
   <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
- <div class="cabeçario">
-    <header class="header">
-      <div class="logo">
-        <img src="Img/ChatGPT Image 9 de jul. de 2025, 13_42_30.png" alt="Chef Click Logo">
-      </div>
 
-    <div class="barra-de-pesquisa">
-            <input type="search" name="pesquisa" placeholder="Search">
-            <a href="pesquisa.html" class="botao-pesquisa">🔎</a>
+<!-- Cabeçalho do site (logo, barra de pesquisa, login/cadastro e menu) -->
+<div class="cabeçario">
+  <header class="header">
+        
+    <!-- Logo da marca -->
+    <div class="logo">
+      <img src="Img/ChatGPT Image 9 de jul. de 2025, 13_42_30.png" alt="Chef Click Logo">
     </div>
 
+    <!-- Campo de pesquisa com botão -->
+    <div class="barra-de-pesquisa">
+      <input type="search" name="pesquisa" placeholder="Search">
+      <a href="pesquisa.html" class="botao-pesquisa">🔎</a>
+    </div>
+
+    <!-- Links de login e cadastro -->
     <div class="login-cadastro">
       <a href="login.html" class="Login">Login</a>
       <a href="cadastro.html" class="Cadastro">Cadastro</a>
-
     </div>
- 
   </header>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="#">Categorias</a>
-      <a href="#">Promoções</a>
-      <a href="#">Novidades</a>
-      <a href="#">Favoritos</a>
-      <a href="#">Recomendado</a>
-    </nav>
 
+  <!-- Menu de navegação -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="#">Categorias</a>
+    <a href="#">Promoções</a>
+    <a href="#">Novidades</a>
+    <a href="#">Favoritos</a>
+    <a href="#">Recomendado</a>
+  </nav>
 </div>
+
+<!-- Conteúdo principal da página -->
 <main class="principal">
+  <!-- Título da seção -->
   <h2>CADASTRO</h2>
+
+  <!-- Formulário de cadastro de usuário -->
   <form class="form-cadastro">
+
+    <!-- Campo de entrada para o nome -->
     <label for="nome">Nome</label>
     <input type="text" id="nome" placeholder="Insira aqui seu Nome...">
 
+    <!-- Campo de entrada para o e-mail -->
     <label for="email">Email</label>
     <input type="email" id="email" placeholder="Insira aqui seu Email...">
 
+    <!-- Campo de entrada para a senha -->
     <label for="senha">Senha</label>
     <input type="password" id="senha" placeholder="Insira aqui sua Senha...">
 
+    <!-- Campo de entrada para confirmar a senha -->
     <label for="confirmar-senha">Confirme a Senha</label>
     <input type="password" id="confirmar-senha" placeholder="Insira aqui sua Senha...">
 
-    <div class="checkbox-container">
+    <!-- Checkbox de consentimento para notificações -->
+    <div class="botao">
       <input type="checkbox" id="aceito">
-      <label for="aceito" class="label-checkbox">
+      <label for="aceito" class="nome-botao">
         <strong>Aceito</strong><br>
         <small>Você aceita receber notificações de Desconto e novidades no seu email</small>
       </label>
     </div>
 
+    <!-- Botão para enviar o formulário de cadastro -->
     <button type="submit" class="botao-registrar">Registrar-se</button>
+
+    <!-- Link para redirecionar à página de login -->
     <a href="login.html" class="botao-logar">Logar</a>
   </form>
 </main>
 
-  <footer class="footer">
-    <div class="coluna">
-      <p>Chef Click - Sua comida favorita em poucos cliques</p>
-      <p>© 2025 Chef Click. Todos os direitos reservados.</p>
-      <p>Entregamos em toda a cidade | Atendimento das 10h às 23h</p>
-      <p>Suporte: (11) 91234-5678 | contato@chefclick.com.br</p>
-      <p>Aceitamos cartões, Pix e pagamentos online com segurança</p>
-    </div>
-    <div class="coluna">
-      <p>Nos acompanhe nas redes sociais:</p>
-      <p>Instagram: @chefclick.oficial</p>
-      <p>Facebook: com/chefclick.oficial</p>
-      <p>WhatsApp: 559912345678</p>
-    </div>
-  </footer>
+<!-- Rodapé com informações da empresa -->
+<footer class="footer">
+  <div class="coluna">
+    <p>Chef Click - Sua comida favorita em poucos cliques</p>
+    <p>© 2025 Chef Click. Todos os direitos reservados.</p>
+    <p>Entregamos em toda a cidade | Atendimento das 10h às 23h</p>
+    <p>Suporte: (11) 91234-5678 | contato@chefclick.com.br</p>
+    <p>Aceitamos cartões, Pix e pagamentos online com segurança</p>
+  </div>
+  <div class="coluna">
+    <p>Nos acompanhe nas redes sociais:</p>
+    <p>Instagram: @chefclick.oficial</p>
+    <p>Facebook: com/chefclick.oficial</p>
+    <p>WhatsApp: 559912345678</p>
+  </div>
+</footer>
 </body>
 </html>

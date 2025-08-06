@@ -1,10 +1,11 @@
+/* Define box-sizing padrão e zera margens/paddings */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- /*outline: solid cyan;*/
 }
 
+/* Estilização geral do corpo */
 body {
   font-size: 2vmin;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +15,9 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-/* ---------- HEADER + MENU ---------- */
+
+/* ---------------- CABEÇALHO E MENU ---------------- */
+
 .cabeçario {
   background-color: #CE4444;
   display: grid;
@@ -22,14 +25,16 @@ body {
   outline: solid black;
 }
 
+/* Linha principal do cabeçalho */
 .header {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1vmin 2vmin;
   gap: 2vmin;
 }
 
+/* Área da logo */
 .logo {
   display: flex;
   align-items: center;
@@ -41,6 +46,7 @@ body {
   height: 12vmin;
 }
 
+/* Barra de pesquisa */
 .barra-de-pesquisa {
   display: flex;
   align-items: center;
@@ -52,16 +58,15 @@ body {
   border-radius: 10vmin;
   border: 1px solid #ccc;
   width: 30vmin;
-  font-size: 1.8vmin;
+  font-size: 2vmin;
 }
 
 .barra-de-pesquisa .botao-pesquisa {
   padding: 1vmin 2vmin;
-  color: white;
   text-decoration: none;
-  font-size: 1.8vmin;
 }
 
+/* Botões de login e cadastro */
 .login-cadastro {
   display: flex;
   gap: 1vmin;
@@ -74,6 +79,7 @@ body {
   cursor: pointer;
 }
 
+/* Estilo dos links de login e cadastro */
 .Login {
   background-color: black;
   color: white;
@@ -87,7 +93,7 @@ body {
   text-decoration: none;
 }
 
-/* ---------- MENU ---------- */
+/* ---------------- MENU DE NAVEGAÇÃO ---------------- */
 
 .menu {
   display: flex;
@@ -105,17 +111,19 @@ body {
 
 /* ---------- CONTEÚDO PRINCIPAL ---------- */
 
+/* Estilização geral da área principal */
 .principal {
   padding: 2vmin;
-  font-family: Arial, sans-serif;
 }
 
+/* Estilo do título principal */
 .principal h2 {
   font-size: 3vmin;
   margin-bottom: 2vmin;
   
 }
 
+/* Container de cada resultado de produto */
 .resultado {
   display: grid;
   grid-template-columns: 20vmin 1fr;
@@ -124,6 +132,7 @@ body {
   align-items: flex-start;
 }
 
+/* Bloco do produto: imagem, nome, preço */
 .produto {
   display: flex;
   flex-direction: column;
@@ -137,28 +146,33 @@ body {
   min-height: 30vmin;
 }
 
+/* Estilização da imagem do produto */
 .produto img {
   width: 100%;
   height: auto;
   margin-bottom: 1vmin;
 }
 
+/* Texto dentro do card do produto */
 .produto p {
   margin: 0.5vmin 0;
   text-align: center;
   font-size: 1.8vmin;
 }
 
+/* Título da descrição do produto */
 .descricao h3 {
   font-size: 2.2vmin;
   margin-bottom: 1vmin;
 }
 
+/* Parágrafos de descrição do produto */
 .descricao p {
   font-size: 1.8vmin;
   margin-bottom: 0.5vmin;
-  text-align: justify;
 }
+
+/* ---------------- RODAPÉ ---------------- */
 
 .footer {
   background-color: #A3A4A0;
@@ -190,6 +204,7 @@ body {
   .descricao h3,
   .descricao p {
     font-size: 2.2vmin;
+
   }
 }
 

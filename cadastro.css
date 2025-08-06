@@ -1,10 +1,11 @@
+/* Define box-sizing padrão e zera margens/paddings */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- /*outline: solid cyan;*/
 }
 
+/* Estilização geral do corpo */
 body {
   font-size: 2vmin;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +15,9 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-/* ---------- HEADER + MENU ---------- */
+
+/* ---------------- CABEÇALHO E MENU ---------------- */
+
 .cabeçario {
   background-color: #CE4444;
   display: grid;
@@ -22,14 +25,16 @@ body {
   outline: solid black;
 }
 
+/* Linha principal do cabeçalho */
 .header {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1vmin 2vmin;
   gap: 2vmin;
 }
 
+/* Área da logo */
 .logo {
   display: flex;
   align-items: center;
@@ -41,6 +46,7 @@ body {
   height: 12vmin;
 }
 
+/* Barra de pesquisa */
 .barra-de-pesquisa {
   display: flex;
   align-items: center;
@@ -52,20 +58,18 @@ body {
   border-radius: 10vmin;
   border: 1px solid #ccc;
   width: 30vmin;
-  font-size: 1.8vmin;
+  font-size: 2vmin;
 }
 
 .barra-de-pesquisa .botao-pesquisa {
   padding: 1vmin 2vmin;
-  color: white;
   text-decoration: none;
-  font-size: 1.8vmin;
 }
 
+/* Botões de login e cadastro */
 .login-cadastro {
   display: flex;
   gap: 1vmin;
-  text-decoration: none;
 }
 
 .login-cadastro button {
@@ -75,18 +79,21 @@ body {
   cursor: pointer;
 }
 
+/* Estilo dos links de login e cadastro */
 .Login {
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 
 .Cadastro {
   background-color: white;
   color: black;
   border: 1px solid black;
+  text-decoration: none;
 }
 
-/* ---------- MENU ---------- */
+/* ---------------- MENU DE NAVEGAÇÃO ---------------- */
 
 .menu {
   display: flex;
@@ -104,10 +111,12 @@ body {
 
 /* ---------- CONTEÚDO PRINCIPAL ---------- */
 
+/* Espaçamento do conteúdo principal */
 .principal {
   padding: 2vmin;
 }
 
+/* Estilo geral do formulário de cadastro */
 .form-cadastro {
   display: flex;
   flex-direction: column;
@@ -117,6 +126,7 @@ body {
   margin-top: 3vmin;
 }
 
+/* Estilização dos campos de entrada */
 .form-cadastro input {
   padding: 1.5vmin;
   border-radius: 1vmin;
@@ -124,18 +134,21 @@ body {
   font-size: 2vmin;
 }
 
-.checkbox-container {
+/* Estilização do checkbox e sua descrição */
+.botao {
   display: flex;
   align-items: flex-start;
   gap: 1vmin;
   margin-top: 1vmin;
 }
 
-.label-checkbox {
+/* Texto ao lado da checkbox */
+.nome-botao {
   font-size: 1.6vmin;
-  line-height: 1.2;
+  
 }
 
+/* Estilo do botão de "Registrar-se" */
 .botao-registrar {
   margin-top: 2vmin;
   padding: 1.5vmin;
@@ -147,17 +160,19 @@ body {
   cursor: pointer;
 }
 
+/* Estilo do link de login formatado como botão */
 .botao-logar {
   margin: 2vmin auto 0 auto;
   padding: 1vmin 2vmin;
   background-color: #e5d5ff;
-  border: none;
   border-radius: 2vmin;
   font-size: 2vmin;
   color: black;
   cursor: pointer;
   text-decoration: none;
 }
+
+/* ---------------- RODAPÉ ---------------- */
 
 .footer {
   background-color: #A3A4A0;
@@ -171,4 +186,18 @@ body {
 
 .footer .coluna {
   max-width: 50%;
+}
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+@media (max-width: 768px) {
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-cadastro {
+    padding: 0 3vmin;
+  }
 }
